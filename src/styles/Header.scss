@@ -1,0 +1,8 @@
+@use "./_variables.scss" as *;
+
+.header {
+  background-color: $primary-color;
+  color: $text-color;
+  text-align: center;
+  padding: $padding-large;
+}

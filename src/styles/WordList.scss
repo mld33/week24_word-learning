@@ -1,0 +1,9 @@
+@use "./_variables.scss" as *;
+
+.word-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $padding-medium;
+  justify-content: center;
+}
+ 

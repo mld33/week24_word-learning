@@ -1,0 +1,22 @@
+@use './_variables.scss' as *;
+
+.home-page {
+  text-align: center;
+  padding: $padding-large;
+}
+
+.word-list {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.word-list-item {
+  display: table-row;
+}
+
+.word-card {
+  display: table-cell;
+  padding: $padding-medium;
+  border: 2px solid $primary-color;
+}

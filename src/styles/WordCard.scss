@@ -1,0 +1,73 @@
+@use './_variables.scss' as *;
+
+.word-card {
+  background-color: $background-color;
+  border: 3px solid $primary-color;
+  border-radius: $border-radius;
+  padding: $padding-medium;
+  margin-bottom: $padding-medium;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  h3 {
+    color: $primary-color;
+    font-size: 1.5rem;
+    margin-bottom: $padding-small;
+  }
+
+  p {
+    margin: 0.5rem 0;
+    color: #333;
+  }
+
+  input {
+    width: 100%;
+    padding: $padding-small;
+    border: 1px solid $secondary-color;
+    border-radius: $border-radius;
+    margin-bottom: $padding-small;
+  }
+
+  .edit-btn, .delete-btn, .save-btn, .cancel-btn, .show-translation-btn {
+    background-color: $primary-color;
+    color: $text-color;
+    border: none;
+    padding: $padding-small;
+    margin-right: $padding-small;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: $border-radius;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+
+  .delete-btn {
+    background-color: red;
+
+    &:hover {
+      background-color: darkred;
+    }
+  }
+
+  .cancel-btn {
+    background-color: gray;
+
+    &:hover {
+      background-color: darkgray;
+    }
+  }
+
+  .show-translation-btn {
+    background-color: orange;
+    font-weight: bold;
+    
+    &:hover {
+      background-color: darkorange;
+    }
+  }
+}
